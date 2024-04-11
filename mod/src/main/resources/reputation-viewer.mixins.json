@@ -5,6 +5,11 @@
   "refmap": "${id}.refmap.json",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
+    "GuardEntityMixin",
+    "VillagerEntityMixin",
+    "jade.GossipHolderProviderMixin",
+    "jade.HierarchyLookupMixin",
+    "wthit.GossipHolderProviderMixin"
   ],
   "client": [
   ],

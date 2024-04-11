@@ -22,16 +22,18 @@
         "value": "${group}.EntrypointKt::init"
       }
     ],
-    "client": [
+    "jade": [
       {
         "adapter": "kotlin",
-        "value": "${group}.client.EntrypointKt::init"
+        "value": "${group}.ReputationJadePlugin"
       }
-    ],
-    "modmenu": [
+    ]
+  },
+  "custom": {
+    "waila:plugins": [
       {
-        "adapter": "kotlin",
-        "value": "${group}.client.ModMenuEntrypoint"
+        "id": "reputation:plugin",
+        "initializer": "${group}.ReputationWthitPlugin"
       }
     ]
   },
@@ -48,6 +50,8 @@
     "fabric-language-kotlin": "${fabric_kotlin}"
   },
   "recommends": {
-    "modmenu": "${modmenu}"
+    "modmenu": "${modmenu}",
+    "jade": "*",
+    "wthit": "*"
   }
 }

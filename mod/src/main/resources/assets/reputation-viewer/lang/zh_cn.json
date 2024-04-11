@@ -1,0 +1,4 @@
+{
+  "reputation-viewer:reputation.tooltip": "声望：%s",
+  "config.jade.plugin_reputation-viewer.reputation": "声望"
+}

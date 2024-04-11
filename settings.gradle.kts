@@ -5,7 +5,16 @@ apply(
 val minecraft = settings.extra["minecraft"]
 val kotlin = settings.extra["kotlin"]
 
-dependencyResolutionManagement.versionCatalogs.named("catalog") {}
+dependencyResolutionManagement.versionCatalogs.named("catalog") {
+    library("jade", "maven.modrinth", "jade").version("11.8.0-fabric")
+
+    library("wthit", "maven.modrinth", "wthit").version("fabric-8.9.0")
+    library("badpackets", "maven.modrinth", "badpackets").version("fabric-0.4.3")
+
+    // https://modrinth.com/mod/guard-villagers-(fabricquilt)/versions
+    library("guard-villagers", "maven.modrinth", "guard-villagers-(fabricquilt)")
+        .version("2.0.9-$minecraft")
+}
 
 plugins {
     id("org.gradle.toolchains.foojay-resolver-convention") version "0.8.0"

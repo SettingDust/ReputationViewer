@@ -14,6 +14,8 @@ val description: String by rootProject.properties
 
 base.archivesName = name
 
+kotlin { jvmToolchain(17) }
+
 loom {
     splitEnvironmentSourceSets()
 
@@ -50,9 +52,14 @@ dependencies {
 
     val modClientImplementation by configurations
     modClientImplementation(catalog.modmenu)
-}
 
-kotlin { jvmToolchain(17) }
+    modImplementation(explosion.fabric(catalog.guard.villagers.get().toString()))
+
+    modImplementation(catalog.jade)
+
+    modImplementation(catalog.wthit)
+    modRuntimeOnly(catalog.badpackets)
+}
 
 java {
     // Loom will automatically attach sourcesJar to a RemapSourcesJar task and to the "build" task
