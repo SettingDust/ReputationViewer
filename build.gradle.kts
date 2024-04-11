@@ -10,7 +10,7 @@ plugins {
     alias(catalog.plugins.semver)
 }
 
-group = "settingdust.template"
+group = "settingdust.reputationviewer"
 
 version = semver.semVersion.toString()
 

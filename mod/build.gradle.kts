@@ -69,7 +69,7 @@ val metadata =
         "name" to name,
         "version" to version,
         "description" to description,
-        "source" to "https://github.com/SettingDust/FabricKotlinTemplate",
+        "source" to "https://github.com/SettingDust/ReputationViewer",
         "minecraft" to "~1.20",
         "fabric_loader" to ">=0.12",
         "fabric_kotlin" to ">=1.10",

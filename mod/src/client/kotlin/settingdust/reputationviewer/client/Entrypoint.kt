@@ -1,4 +1,4 @@
-package settingdust.template.client
+package settingdust.reputationviewer.client
 
 import com.terraformersmc.modmenu.api.ModMenuApi
 
