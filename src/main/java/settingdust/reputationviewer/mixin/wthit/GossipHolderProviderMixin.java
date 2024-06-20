@@ -30,15 +30,17 @@ public class GossipHolderProviderMixin implements IEntityComponentProvider, IDat
         var entity = (GossipHolder) accessor.getEntity();
 
         tooltip.addLine(Text.translatable(
-                TOOLTIP_TRANSLATION,
-                data.contains(KEY)
-                        ? data.getInt(KEY)
-                        : entity.getSelfishvillager$gossips().getReputationFor(player.getUuid(), (it) -> true)));
+            TOOLTIP_TRANSLATION,
+            data.contains(KEY)
+            ? data.getInt(KEY)
+            : entity.getSelfishvillager$gossips().getReputationFor(player.getUuid(), (it) -> true)
+        ));
     }
 
     @Override
     public void appendData(
-            final IDataWriter data, final IServerAccessor<GossipHolder> accessor, final IPluginConfig config) {
+        final IDataWriter data, final IServerAccessor<GossipHolder> accessor, final IPluginConfig config
+    ) {
         var player = accessor.getPlayer();
         var target = accessor.getTarget();
 

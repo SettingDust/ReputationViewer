@@ -31,10 +31,11 @@ public class GossipHolderProviderMixin implements IEntityComponentProvider, ISer
         var player = accessor.getPlayer();
         var entity = (GossipHolder) accessor.getEntity();
         tooltip.add(Text.translatable(
-                TOOLTIP_TRANSLATION,
-                tag.contains(KEY)
-                        ? tag.getInt(KEY)
-                        : entity.getSelfishvillager$gossips().getReputationFor(player.getUuid(), (it) -> true)));
+            TOOLTIP_TRANSLATION,
+            tag.contains(KEY)
+            ? tag.getInt(KEY)
+            : entity.getSelfishvillager$gossips().getReputationFor(player.getUuid(), (it) -> true)
+        ));
     }
 
     @Override

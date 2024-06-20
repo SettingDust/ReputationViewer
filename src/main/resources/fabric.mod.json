@@ -29,20 +29,8 @@
       }
     ]
   },
-  "custom": {
-    "waila:plugins": [
-      {
-        "id": "reputation:plugin",
-        "initializer": "${group}.ReputationWthitPlugin"
-      }
-    ]
-  },
   "mixins": [
-    "${id}.mixins.json",
-    {
-      "config": "${id}.client.mixins.json",
-      "environment": "client"
-    }
+    "${id}.mixins.json"
   ],
   "depends": {
     "fabricloader": "${fabric_loader}",

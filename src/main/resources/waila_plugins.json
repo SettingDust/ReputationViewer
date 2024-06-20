@@ -1,0 +1,5 @@
+{
+    "reputation:plugin": {
+        "initializer": "${group}.ReputationWthitPlugin"
+    }
+}

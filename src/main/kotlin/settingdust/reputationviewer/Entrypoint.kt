@@ -11,7 +11,7 @@ fun init() {}
 object ReputationViewer {
     const val ID = "reputation-viewer"
 
-    @JvmStatic fun identifier(path: String) = Identifier(ID, path)
+    @JvmStatic fun identifier(path: String) = Identifier.of(ID, path)
 }
 
 @snownee.jade.api.WailaPlugin
