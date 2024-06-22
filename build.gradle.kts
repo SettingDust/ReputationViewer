@@ -87,7 +87,7 @@ val metadata =
         "name" to name,
         "version" to version,
         "description" to description,
-        "source" to "https://github.com/SettingDust/DataDumper",
+        "source" to "https://github.com/SettingDust/ReputationViewer",
         "minecraft" to "~1.21",
         "fabric_loader" to ">=0.15",
         "fabric_kotlin" to ">=1.11",
