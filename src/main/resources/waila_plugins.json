@@ -1,5 +1,9 @@
 {
     "reputation:plugin": {
-        "initializer": "${group}.ReputationWthitPlugin"
+        "entrypoints": {
+            "common": "${group}.ReputationWthitPlugin",
+            "client": "${group}.ReputationWthitPlugin"
+        },
+        "side": "*"
     }
 }

@@ -21,9 +21,9 @@ public class ReputationViewerMixinConfig implements IMixinConfigPlugin {
 
     @Override
     public boolean shouldApplyMixin(final String targetClassName, final String mixinClassName) {
-        if (mixinClassName.startsWith("settingdust.reputationviewer.mixin.jade")) {
+        if (mixinClassName.contains(".jade")) {
             return FabricLoader.getInstance().isModLoaded("jade");
-        } else if (mixinClassName.startsWith("settingdust.reputationviewer.mixin.wthit"))
+        } else if (mixinClassName.contains(".wthit"))
             return FabricLoader.getInstance().isModLoaded("wthit");
         return true;
     }

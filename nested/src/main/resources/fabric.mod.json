@@ -15,23 +15,6 @@
   "license": "MIT",
   "icon": "assets/${id}/icon.png",
   "environment": "*",
-  "entrypoints": {
-    "main": [
-      {
-        "adapter": "kotlin",
-        "value": "${group}.EntrypointKt::init"
-      }
-    ],
-    "jade": [
-      {
-        "adapter": "kotlin",
-        "value": "${group}.ReputationJadePlugin"
-      }
-    ]
-  },
-  "mixins": [
-    "${id}.mixins.json"
-  ],
   "depends": {
     "fabricloader": "${fabric_loader}",
     "minecraft": "${minecraft}",

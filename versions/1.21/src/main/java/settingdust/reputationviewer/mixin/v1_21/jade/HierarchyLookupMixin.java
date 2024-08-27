@@ -1,4 +1,4 @@
-package settingdust.reputationviewer.mixin.jade;
+package settingdust.reputationviewer.mixin.v1_21.jade;
 
 import com.llamalad7.mixinextras.injector.ModifyReturnValue;
 import com.llamalad7.mixinextras.injector.v2.WrapWithCondition;

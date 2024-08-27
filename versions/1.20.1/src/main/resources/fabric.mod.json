@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "${id}-1_20_1",
+  "version": "${version}",
+  "name": "${name} for 1.20.1",
+  "description": "${description}",
+  "authors": [
+    "${author}"
+  ],
+  "contact": {
+    "homepage": "${source}",
+    "sources": "${source}",
+    "issues": "${source}/issues"
+  },
+  "license": "MIT",
+  "icon": "assets/${id}/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      {
+        "adapter": "kotlin",
+        "value": "${group}.EntrypointKt::init"
+      }
+    ],
+    "jade": [
+      {
+        "adapter": "kotlin",
+        "value": "${group}.ReputationJadePlugin"
+      }
+    ]
+  },
+  "mixins": [
+    "${id}.mixins.json",
+    "${id}.1.20.1.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": "${fabric_loader}",
+    "minecraft": "${minecraft}",
+    "fabric-language-kotlin": "${fabric_kotlin}"
+  },
+  "recommends": {
+    "modmenu": "${modmenu}",
+    "jade": "*",
+    "wthit": "*"
+  },
+  "custom": {
+    "modmenu": {
+      "parent": "$id"
+    }
+  }
+}
