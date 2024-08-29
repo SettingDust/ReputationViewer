@@ -53,7 +53,8 @@ jobs:
             fabric
 
           game-versions: |
-            [1.21,)
+            1.20.1
+            [1.21, 1.21.1]
           game-version-filter: releases
 
           dependencies: |
@@ -62,6 +63,7 @@ jobs:
             wthit(optional)
 
           java: |
+            17
             21
 
       - name: Commit CHANGELOG.md

@@ -61,6 +61,13 @@ val metadata =
 tasks {
     withType<ProcessResources> {
         inputs.properties(metadata)
-        filesMatching(listOf("fabric.mod.json", "*.mixins.json", "waila_plugins.json")) { expand(metadata) }
+        filesMatching(listOf("fabric.mod.json", "*.mixins.json", "waila_plugins.json")) {
+            expand(metadata)
+        }
+    }
+
+    named<Jar>("sourcesJar") {
+        from(rootProject.allprojects.map { it.sourceSets.main.get().allSource })
+        duplicatesStrategy = DuplicatesStrategy.EXCLUDE
     }
 }
