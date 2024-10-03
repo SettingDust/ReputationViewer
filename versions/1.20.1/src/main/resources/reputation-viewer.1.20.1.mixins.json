@@ -9,8 +9,5 @@
     "jade.HierarchyLookupMixin"
   ],
   "client": [
-  ],
-  "injectors": {
-    "defaultRequire": 1
-  }
+  ]
 }

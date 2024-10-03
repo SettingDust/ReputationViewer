@@ -12,8 +12,5 @@
     "wthit.GossipHolderProviderMixin"
   ],
   "client": [
-  ],
-  "injectors": {
-    "defaultRequire": 1
-  }
+  ]
 }
