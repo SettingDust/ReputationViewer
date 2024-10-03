@@ -1,4 +1,9 @@
 
+## [0.4.2] - 2024-10-03
+### :bug: Bug Fixes
+- [`685175a`](https://github.com/SettingDust/ReputationViewer/commit/685175ab304eb1a3e8f6a0848e67883174b34798) - no require for mixins for working without wthit *(commit by [@SettingDust](https://github.com/SettingDust))*
+
+
 ## [0.4.0] - 2024-08-29
 ### :recycle: Refactors
 - [`45b5d93`](https://github.com/SettingDust/ReputationViewer/commit/45b5d93691b0265156cdeae3ccf3acbe4de0c74e) - support 1.20.1 and 1.21 with one jar *(commit by [@SettingDust](https://github.com/SettingDust))*
@@ -27,3 +32,4 @@
 [0.2.0]: https://github.com/SettingDust/ReputationViewer/compare/0.1.0...0.2.0
 [0.3.0]: https://github.com/SettingDust/ReputationViewer/compare/0.2.0...0.3.0
 [0.4.0]: https://github.com/SettingDust/ReputationViewer/compare/0.3.0...0.4.0
+[0.4.2]: https://github.com/SettingDust/ReputationViewer/compare/0.4.1...0.4.2
